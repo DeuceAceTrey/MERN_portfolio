@@ -622,8 +622,11 @@
 
 .mini-about {
   height:  75%;
+  
+  background-size: '100% 100%';
+  width: '120%';
 }
- 
+
 
 @media only screen and (max-width: 374px) {
   .mini-about-parent {
@@ -748,6 +751,7 @@
   .mini-about {
     height:  100%;
     padding-bottom: 35px;
+    background-image: url('../../images/Rectangle\ 59.png');
   }
   #mainwebdev, .main-img-wrapper {
     display: none;
@@ -850,10 +854,12 @@
   }
   .about-card {
     height:  100%;
+    background-image: url("../../images/Text_Rectangle.png");
   }
   .mini-about {
     height:  100%;
     padding-bottom: 35px;
+   
   }
   .about-us {
     font-size: 40px;
@@ -888,9 +894,15 @@
     font-size: 0.75rem;
     line-height: 167.7%;
     color: white;
+    
   }
   .mini-about {
     height:  80%;
+    
+  }
+
+  .about-card {
+    background-image: url("../../images/Text_Rectangle.png");
   }
   .about-us {
     font-size: 40px;
@@ -920,10 +932,13 @@
 @media only screen and (max-width: 1920px) and (min-width: 1025px) {
   .mini-about {
     height:  85%;
+    background-image: url("../../images/Text_Rectangle.png");
+    background-size: 100% 100%;
   }
   .about-us {
     font-size: 40px;
   }
+  
 
   .panel1 {
     /* margin-top: 10%; */

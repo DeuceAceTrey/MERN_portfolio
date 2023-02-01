@@ -12,6 +12,9 @@ import { Auth } from "aws-amplify";
 import Routes from "./Routes";
 import Logo from './images/logo.png';
 import back_arrow from './images/back_arrow.png';
+import img_facebook from './images/facebook.png';
+import img_twitter from './images/twitter.png';
+import img_instagram from './images/instagram.png';
 import "./App.css";
 import { FaStepBackward } from "react-icons/fa";
 
@@ -72,6 +75,11 @@ function App() {
                 <Nav.Link className={"nav-link" + (window.location.href.includes('portfolio') ? ' striked' : '')} href="/allworks">Portfolio</Nav.Link>
                 <Nav.Link className={"nav-link" + (window.location.href.includes('about') ? ' striked' : '')} href="/about">About</Nav.Link>
                 <Nav.Link className={"nav-link" + (window.location.href.includes('contact') ? ' striked' : '')} href="/contact">Contact</Nav.Link> 
+                <Nav.Link className="social" >
+                  <Image src={img_twitter} className="social_icon"/>
+                  <Image src={img_facebook} className="social_icon"/>
+                  <Image src={img_instagram} className="social_icon"/>
+                  </Nav.Link> 
                 {/* <Nav.Link className={"nav-link" + (window.location.href.includes('store') ? ' striked' : '')} href="/store">Store</Nav.Link> */}
               </>
               )}

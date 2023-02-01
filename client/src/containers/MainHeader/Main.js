@@ -200,7 +200,7 @@ function Main(props) {
         <Row className='main-row mb-10 mini-about-parent' id="H3" data-scroll-indicator-title="H3">
           <Col md='7' className="p-0 magL3 about-card " style={{'display':'flex','alignItems':'center','marginTop': 'auto',
     'marginBottom': 'auto'}}>
-            <div className="padL5 mini-about" style={{'backgroundImage': "url(" + rect_green + ")",'backgroundSize': '100% 100%','width': '120%'}}>
+            <div className="padL5 mini-about" >
               <p className='padL5 padT4 m-0 about-us' >
                 About Us
               </p>
