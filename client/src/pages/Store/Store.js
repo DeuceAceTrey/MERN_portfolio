@@ -70,7 +70,7 @@ function Store() {
     // console.log(document.getElementById("title").value);
     // console.log(document.getElementById("hashtag").value);
     // console.log(document.getElementById("text").value);
-    axios.post('http://localhost:4000/images/upload', formData)
+    axios.post('http://143.198.157.195/server/images/upload', {headers: {'Access-Control-Allow-Origin': '*'}}, formData)
     .then(res => {
       if(res.data == 'success')
       {

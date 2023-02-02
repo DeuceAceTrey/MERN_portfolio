@@ -1,7 +1,7 @@
 {
   "name": "my-react-portfolio",
   "version": "0.1.0",
-  "proxy": "http://localhost:4000/",
+  "proxy": "http://143.198.157.195/server/",
   "private": true,
   "dependencies": {
     "@react-pdf/renderer": "^1.6.13",

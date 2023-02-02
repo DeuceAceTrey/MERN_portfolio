@@ -39,7 +39,7 @@ function Contact(props) {
       // console.log(fields);
       await axios({
         method: "POST",
-        url: "http://localhost:4000/api/sendMail",
+        url: "http://143.198.157.195/server/api/sendMail",
         data: fields
       }).then((response) => {
         console.log(response);
