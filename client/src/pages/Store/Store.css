@@ -118,6 +118,10 @@ border: 1px dashed #000000;
 
 }
 
+.button-row-low {
+  display: none;
+}
+
 @media only screen and (max-width: 480px) {
   .features-container {
     height: auto;
@@ -135,6 +139,12 @@ border: 1px dashed #000000;
     margin-left:  5%;
     margin-right:  5%;
   }
+  .store-leaves ,.button-row-high{
+    display: none;
+  }
+  .button-row-low {
+    display: inline;
+  }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
@@ -142,7 +152,11 @@ border: 1px dashed #000000;
     height: auto;
   }
   .btn-cancel {
-    margin-left:  2%;
+    margin-left: 2%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
   }
   .res_margin {
     margin-left:  5%;
@@ -150,9 +164,23 @@ border: 1px dashed #000000;
   }
   .btn-draft {
     margin-left: 2%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
   }
   .btn-continue{
     margin-left: 2%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  .store-leaves ,.button-row-high{
+    display: none;
+  }
+  .button-row-low {
+    display: inline;
   }
 }
 

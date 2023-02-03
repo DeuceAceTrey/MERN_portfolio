@@ -70,7 +70,7 @@ function Store() {
     // console.log(document.getElementById("title").value);
     // console.log(document.getElementById("hashtag").value);
     // console.log(document.getElementById("text").value);
-    axios.post('http://143.198.157.195/server/images/upload', {headers: {'Access-Control-Allow-Origin': '*'}}, formData)
+    axios.post('http://143.198.157.195/server/images/upload', formData)
     .then(res => {
       if(res.data == 'success')
       {
@@ -129,10 +129,10 @@ function Store() {
     <Container className='main-container container-fluid col-12' id='main-container'>
       <Row className='my-auto' style={{}}>
           <div className="col-md-3" style={{'width':'25%'}}>
-            <Image className = '' style={{'width':'100%'}} src={Leaves}/>
+            <Image className = 'store-leaves' style={{'width':'100%'}} src={Leaves}/>
           </div>
           <div className="col-md-9 col-12">
-            <Row>
+            <Row className="button-row-high">
               <Button className='btn-cancel col-md-2 col-12' onClick={cancel}>Cancel</Button>
               <Button className='btn-draft col-md-3 col-12'>Set as draft</Button>
               <Button className='btn-continue col-md-2 col-12' disabled={!continueable} onClick={uploadPic}>Continue</Button>
@@ -162,6 +162,11 @@ function Store() {
               <div className='about-row res_margin mt-4'>
                 <FileUploader stylle={{'margin':'0px'}}  name='file' types={fileTypes} children={fileIns()} handleChange={(file)=>changePic(file)} fileOrFiles={pic}  />              
               </div>
+            </Row>
+            <Row className="button-row-low">
+              <Button className='btn-cancel col-md-2 col-12' onClick={cancel}>Cancel</Button>
+              <Button className='btn-draft col-md-3 col-12'>Set as draft</Button>
+              <Button className='btn-continue col-md-2 col-12' disabled={!continueable} onClick={uploadPic}>Continue</Button>
             </Row>
           </div>
       </Row>
